@@ -1,6 +1,6 @@
 ---
 id: home
-title: React – The library for web and native user interfaces
+title: React – Forritasafnið fyrir notendaviðmót á vefnum og heimavangi
 permalink: index.html
 ---
 

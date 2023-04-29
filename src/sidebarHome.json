@@ -4,10 +4,10 @@
   "routes": [
     {
       "hasSectionHeader": true,
-      "sectionHeader": "GET STARTED"
+      "sectionHeader": "NOTKUN REACTS"
     },
     {
-      "title": "Quick Start",
+      "title": "Fyrstu skref",
       "path": "/learn"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       "hasSectionHeader": true,
-      "sectionHeader": "LEARN REACT"
+      "sectionHeader": "LÆRÐU Á REACT"
     },
     {
       "title": "Describing the UI",
