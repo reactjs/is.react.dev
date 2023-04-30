@@ -1,13 +1,13 @@
 {
-  "title": "Learn React",
+  "title": "Lærðu á React",
   "path": "/learn",
   "routes": [
     {
       "hasSectionHeader": true,
-      "sectionHeader": "GET STARTED"
+      "sectionHeader": "NOTKUN REACTS"
     },
     {
-      "title": "Quick Start",
+      "title": "Fyrstu skref",
       "path": "/learn",
       "routes": [
         {
@@ -44,7 +44,7 @@
     },
     {
       "hasSectionHeader": true,
-      "sectionHeader": "LEARN REACT"
+      "sectionHeader": "LÆRÐU Á REACT"
     },
     {
       "title": "Describing the UI",
@@ -186,7 +186,7 @@
         },
         {
           "title": "Removing Effect Dependencies",
-          "path": "/learn/removing-effect-dependencies"              
+          "path": "/learn/removing-effect-dependencies"
         },
         {
           "title": "Reusing Logic with Custom Hooks",
