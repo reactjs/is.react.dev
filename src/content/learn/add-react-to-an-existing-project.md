@@ -1,68 +1,68 @@
 ---
-title: Add React to an Existing Project
+title: Innsetning á React í tiltæku verkefni
 ---
 
 <Intro>
 
-If you want to add some interactivity to your existing project, you don't have to rewrite it in React. Add React to your existing stack, and render interactive React components anywhere.
+Þú þarft ekki að endurskrifa tiltækt verkefni til að auka gagnvirknina. Þú getur bætt React við núverandi tæknistafla og birt React íhluti hvar sem er.
 
 </Intro>
 
 <Note>
 
-**You need to install [Node.js](https://nodejs.org/en/) for local development.** Although you can [try React](/learn/installation#try-react) online or with a simple HTML page, realistically most JavaScript tooling you'll want to use for development requires Node.js.
+**Þú verður að innsetja [Node.js](https://nodejs.org/en/) fyrir staðbundna þróun.** Þrátt fyrir að þú getir [prófað React](/learn/installation#try-react) á Netinu eða með einfaldri HTML síðu þá munu flest tólin sem þú þarft í þróunarumhverfinu þurfa á Node.js að halda.
 
 </Note>
 
-## Using React for an entire subroute of your existing website {/*using-react-for-an-entire-subroute-of-your-existing-website*/}
+## Notkun á React fyrir undirsíðu á núverandi síðu {/*using-react-for-an-entire-subroute-of-your-existing-website*/}
 
-Let's say you have an existing web app at `example.com` built with another server technology (like Rails), and you want to implement all routes starting with `example.com/some-app/` fully with React.
+Gefum okkur að þú sért með tiltæka vefþjónustu á `example.com` sem var skrifuð með bakendaþjónustu eins og Rails, og þú viljir útfæra allar beiningar sem byrja á `example.com/eitthvað-forrit` með React.
 
-Here's how we recommend to set it up:
+Þá mælum við með þessari nálgun:
 
-1. **Build the React part of your app** using one of the [React-based frameworks](/learn/start-a-new-react-project).
-2. **Specify `/some-app` as the *base path*** in your framework's configuration (here's how: [Next.js](https://nextjs.org/docs/api-reference/next.config.js/basepath), [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
-3. **Configure your server or a proxy** so that all requests under `/some-app/` are handled by your React app.
+1. **Smíðaðu React hlutann** með einhverju [React rammakerfi](/learn/start-a-new-react-project).
+2. **Tilgreindu `/eitthvað-forrit` sem *grunnslóð*** í stillingum rammans sem þú valdir (sjá hér: [Next.js](https://nextjs.org/docs/api-reference/next.config.js/basepath) eða [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
+3. **Stilltu vefþjóninn eða vefselið** á þann veg að allar beiðnir sem hefjist á `/eitthvað-forrit/` séu birtar í React forritinu þínu.
 
-This ensures the React part of your app can [benefit from the best practices](/learn/start-a-new-react-project#can-i-use-react-without-a-framework) baked into those frameworks.
+Þetta tryggir að React hlutinn í vefsíðunni þinni [fylgi þróunarstöðlunum](/learn/start-a-new-react-project#can-i-use-react-without-a-framework) sem eru innbyggðir í þessum römmum.
 
-Many React-based frameworks are full-stack and let your React app take advantage of the server. However, you can use the same approach even if you can't or don't want to run JavaScript on the server. In that case, serve the HTML/CSS/JS export ([`next export` output](https://nextjs.org/docs/advanced-features/static-html-export) for Next.js, default for Gatsby) at `/some-app/` instead.
+Sum React rammakerfi eru heilstafla (e. full-stack) og gera þér kleift að skrifa bakendakóða líka. Hvort sem það er eitthvað sem þú vilt nýta þer eða ekki þá geturðu fylgt sömu nálgunum. Til dæmis er hægt að birta kyrrlegt HTML, CSS, og JS ([`next export` úttak](https://nextjs.org/docs/advanced-features/static-html-export) í Next.js, sjálfgefið í Gatsby) á síðunni `/eitthvað-forrit`.
 
-## Using React for a part of your existing page {/*using-react-for-a-part-of-your-existing-page*/}
+## Notkun React á hluta vefsíðu {/*using-react-for-a-part-of-your-existing-page*/}
 
-Let's say you have an existing page built with another technology (either a server one like Rails, or a client one like Backbone), and you want to render interactive React components somewhere on that page. That's a common way to integrate React--in fact, it's how most React usage looked at Meta for many years!
+Gefum okkur að þú sért með vefsíðu sem er skrifuð í annarri tækni (annaðvort bakendatækni eins og Rails eða framendatækni eins og Backbone), og að þú viljir birta gagnvirka React íhluti einhvers staðar á síðunni. Þetta er tiltölulega algeng nálgun til að nota React--í raun var það á tímabili nákvæmlega þannig sem Meta notaði React!
 
-You can do this in two steps:
+Þú getur gert þetta í tveimur skrefum:
 
-1. **Set up a JavaScript environment** that lets you use the [JSX syntax](/learn/writing-markup-with-jsx), split your code into modules with the [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) / [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) syntax, and use packages (for example, React) from the [npm](https://www.npmjs.com/) package registry.
-2. **Render your React components** where you want to see them on the page.
+1. **Útbúðu JavaScript umhverfi** sem gerir þér kleift að nota [JSX málskipan](/learn/writing-markup-with-jsx), deila kóðanum þínum í einingar með [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) og [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) málskipan, og notaðu forritasöfn (til dæmis, React) frá [npm](https://www.npmjs.com/) pakkaskránni.
+2. **Birtu React íhlutina þína** þar sem þú vilt hafa þá á síðunni.
 
-The exact approach depends on your existing page setup, so let's walk through some details.
+Nákvæm útfærsla á þessu veltur á núverandi uppsetningu hjá þér, svo við skulum fara aðeins nánar út í smáatriðin.
 
-### Step 1: Set up a modular JavaScript environment {/*step-1-set-up-a-modular-javascript-environment*/}
+### Fyrsta skref: Skiptu JavaScript umhverfinu þínu í einingar {/*step-1-set-up-a-modular-javascript-environment*/}
 
-A modular JavaScript environment lets you write your React components in individual files, as opposed to writing all of your code in a single file. It also lets you use all the wonderful packages published by other developers on the [npm](https://www.npmjs.com/) registry--including React itself! How you do this depends on your existing setup:
+Með því að skipta JavaScript kóða í einingar er hægt að nota margar skrár í stað þess að skrifa allan kóðann í eina skrá. Það gerir þér líka kleift að nota öll forritasöfnin sem eru aðgengileg á [npm](https://www.npmjs.com/) pakkaskránni--þar á meðal React sjálft! Nálgunin veltur á núverandi uppsetningu:
 
-* **If your app is already split into files that use `import` statements,** try to use the setup you already have. Check whether writing `<div />` in your JS code causes a syntax error. If it causes a syntax error, you might need to [transform your JavaScript code with Babel](https://babeljs.io/setup), and enable the [Babel React preset](https://babeljs.io/docs/babel-preset-react) to use JSX.
+* **Ef vefurinn þinn er nú þegar skiptur í mismunandi skrár sem nota `import` setningar** reyndu þá að halda áfram að nota sama kerfi. Athugaðu hvort það virki að skrifa `<div />` án þess að það komi málskipanvilla. Ef þetta veldur villu þá kann að vera að þú þurfir að [umbreyta JavaScript kóðanum með Babel](https://babeljs.io/setup), og virkja [Babel React forstillinguna](https://babeljs.io/docs/babel-preset-react) til að nota JSX.
 
-* **If your app doesn't have an existing setup for compiling JavaScript modules,** set it up with [Vite](https://vitejs.dev/). The Vite community maintains [many integrations with backend frameworks](https://github.com/vitejs/awesome-vite#integrations-with-backends), including Rails, Django, and Laravel. If your backend framework is not listed, [follow this guide](https://vitejs.dev/guide/backend-integration.html) to manually integrate Vite builds with your backend.
+* **Ef vefurinn þinn er ekki með neitt kerfi til að þýða JavaScript einingar** þá skaltu prófa að nota [Vite](https://vitejs.dev/) til þess. Vite samfélagið viðheldur [margs konar samtengingum við bakendaramma](https://github.com/vitejs/awesome-vite#integrations-with-backends), m.a. Rails, Django, og Laravel. Ef bakendaramminn þinn er ekki útlistaður þá skaltu [fylgja þessum leiðbeiningum](https://vitejs.dev/guide/backend-integration.html) til að tengja Vite við bakendann þinn handvirkt.
 
-To check whether your setup works, run this command in your project folder:
+Til að kanna hvort kerfið þitt virki geturðu keyrt eftirfarandi skipun í aðalmöppu verkefnisins:
 
 <TerminalBlock>
 npm install react react-dom
 </TerminalBlock>
 
-Then add these lines of code at the top of your main JavaScript file (it might be called `index.js` or `main.js`):
+Bættu svo þessum kóða efst í aðal JavaScript skránni (hún ætti að heita `index.js` eða kannski `main.js`):
 
 <Sandpack>
 
 ```html index.html hidden
 <!DOCTYPE html>
 <html>
-  <head><title>My app</title></head>
+  <head><title>Vefurinn minn</title></head>
   <body>
-    <!-- Your existing page content (in this example, it gets replaced) -->
+    <!-- Núverandi efni (í þessu tilfelli skiptum við því algjörlega út) -->
   </body>
 </html>
 ```
@@ -70,63 +70,64 @@ Then add these lines of code at the top of your main JavaScript file (it might b
 ```js index.js active
 import { createRoot } from 'react-dom/client';
 
-// Clear the existing HTML content
+// Fjarlægjum núverandi efni.
 document.body.innerHTML = '<div id="app"></div>';
 
-// Render your React component instead
+// Birtum React íhlut þess í stað.
 const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
+root.render(<h1>Halló, heimur!</h1>);
 ```
 
 </Sandpack>
 
-If the entire content of your page was replaced by a "Hello, world!", everything worked! Keep reading.
+Ef efnið á síðunni hvarf og „Halló, heimur!“ kom þess í stað þá virkaði breytingin og þú getur haldið áfram að lesa þessar leiðbeiningar.
 
 <Note>
 
-Integrating a modular JavaScript environment into an existing project for the first time can feel intimidating, but it's worth it! If you get stuck, try our [community resources](/community) or the [Vite Chat](https://chat.vitejs.dev/).
+Fyrst um sinn getur verið hálfógnvekjandi að reyna að útfæra einingamiðað JavaScript umhverfi, en það er þess virði! Prófaðu að skoða [efnið frá React samfélaginu](/community) eða [Vite Chat](https://chat.vitejs.dev/) ef þér finnst þú ekki ná árangri.
 
 </Note>
 
-### Step 2: Render React components anywhere on the page {/*step-2-render-react-components-anywhere-on-the-page*/}
+### Annað skref: Birtu React íhluti hvar sem er á síðunni {/*step-2-render-react-components-anywhere-on-the-page*/}
 
-In the previous step, you put this code at the top of your main file:
+Í skrefinu á undan settum við þennan kóða efst í aðalskránni:
 
-```js
+```js index.js active
 import { createRoot } from 'react-dom/client';
 
-// Clear the existing HTML content
+// Fjarlægjum núverandi efni.
 document.body.innerHTML = '<div id="app"></div>';
 
-// Render your React component instead
+// Birtum React íhlut þess í stað.
 const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
+root.render(<h1>Halló, heimur!</h1>);
 ```
 
-Of course, you don't actually want to clear the existing HTML content!
+En að sjálfsögðu viljum við ekki henda öllu efninu af síðunni!
 
-Delete this code.
+Eyddu þessum kóða.
 
 Instead, you probably want to render your React components in specific places in your HTML. Open your HTML page (or the server templates that generate it) and add a unique [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id) attribute to any tag, for example:
+Þess í stað viltu sennilega birta React íhluti á ákveðnum stöðum. Opnaðu HTML síðuna (eða sniðmátið sem bakendinn útbýr) og bættu við einstöku [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id) eigindi við hvaða merki sem er á síðunni, til dæmis:
 
 ```html
-<!-- ... somewhere in your html ... -->
-<nav id="navigation"></nav>
-<!-- ... more html ... -->
+<!-- ... einhvers staðar í skránni ... -->
+<nav id="valmynd"></nav>
+<!-- ... meira HTML ... -->
 ```
 
-This lets you find that HTML element with [`document.getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) and pass it to [`createRoot`](/reference/react-dom/client/createRoot) so that you can render your own React component inside:
+Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.getElementById`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) og fært [`createRoot`](/reference/react-dom/client/createRoot) hana til að birta React íhlut inni í henni:
 
 <Sandpack>
 
 ```html index.html
 <!DOCTYPE html>
 <html>
-  <head><title>My app</title></head>
+  <head><title>Vefurinn minn</title></head>
   <body>
-    <p>This paragraph is a part of HTML.</p>
-    <nav id="navigation"></nav>
-    <p>This paragraph is also a part of HTML.</p>
+    <p>Þessi efnisgrein er hluti af HTML skránni.</p>
+    <nav id="valmynd"></nav>
+    <p>Þessi efnisgrein er líka hluti af HTML skránni.</p>
   </body>
 </html>
 ```
@@ -134,22 +135,22 @@ This lets you find that HTML element with [`document.getElementById`](https://de
 ```js index.js active
 import { createRoot } from 'react-dom/client';
 
-function NavigationBar() {
-  // TODO: Actually implement a navigation bar
-  return <h1>Hello from React!</h1>;
+function Valmynd() {
+  // Síðar: útfærum raunverulegu valmyndina!
+  return <h1>Halló frá React!</h1>;
 }
 
-const domNode = document.getElementById('navigation');
-const root = createRoot(domNode);
-root.render(<NavigationBar />);
+const domHnútur = document.getElementById('valmynd');
+const rót = createRoot(domHnútur);
+rót.render(<Valmynd />);
 ```
 
 </Sandpack>
 
-Notice how the original HTML content from `index.html` is preserved, but your own `NavigationBar` React component now appears inside the `<nav id="navigation">` from your HTML. Read the [`createRoot` usage documentation](/reference/react-dom/client/createRoot#rendering-a-page-partially-built-with-react) to learn more about rendering React components inside an existing HTML page.
+Taktu eftir því að upprunalega HTML efnið í `index.html` er enn þar, en React íhluturinn `Valmynd` er nú innan í `<nav id="valmynd">` í HTML skránni. Lestu [skjalbúnaðinn fyrir `createRoot`](/reference/react-dom/client/createRoot#rendering-a-page-partially-built-with-react) til að kynna þér nánar hvernig hægt er að birta React íhluti inni í HTML síðu.
 
-When you adopt React in an existing project, it's common to start with small interactive components (like buttons), and then gradually keep "moving upwards" until eventually your entire page is built with React. If you ever reach that point, we recommend migrating to [a React framework](/learn/start-a-new-react-project) right after to get the most out of React.
+Það er algengt að byrja á að útfæra smærri gagnvirka íhluti eins og takka og hægt og rólega „færa sig ofar“ þar til öll síðan er útfærð í React. Ef þú nálgast það stig þá mælum við með því að flytja þig yfir í [React ramma](/learn/start-a-new-react-project) til að nýta React sem best.
 
-## Using React Native in an existing native mobile app {/*using-react-native-in-an-existing-native-mobile-app*/}
+## Notkun á React Native í tiltæku forriti á heimavangi {/*using-react-native-in-an-existing-native-mobile-app*/}
 
-[React Native](https://reactnative.dev/) can also be integrated into existing native apps incrementally. If you have an existing native app for Android (Java or Kotlin) or iOS (Objective-C or Swift), [follow this guide](https://reactnative.dev/docs/integration-with-existing-apps) to add a React Native screen to it.
+Það er einnig hægt að byrja að nota [React Native](https://reactnative.dev/) hægt og rólega. Ef þú ert með forrit fyrir Android (í Java eða Kotlin) eða iOS (í Objective-C eða Swift), [fylgdu þá þessum leiðbeiningum](https://reactnative.dev/docs/integration-with-existing-apps) til að bæta við virkni í React Native.

@@ -1,62 +1,62 @@
 ---
-title: Editor Setup
+title: Uppsetning á ritli
 ---
 
 <Intro>
 
-A properly configured editor can make code clearer to read and faster to write. It can even help you catch bugs as you write them! If this is your first time setting up an editor or you're looking to tune up your current editor, we have a few recommendations.
+Það getur haft mikið að segja að hafa ritilinn sinn almennilega uppsettan, enda getur hann hjálpað við að finna villur jafnóðum og kóðinn er skrifaður. Við erum með nokkrar tillögur handa þeim sem hafa áhuga á að breyta stillingunum fyrir ritilinn sinn.
 
 </Intro>
 
 <YouWillLearn>
 
-* What the most popular editors are
-* How to format your code automatically
+* Hvaða ritlar eru vinsælastir
+* Hvernig er hægt að sníða kóðann sjálfvirkt
 
 </YouWillLearn>
 
-## Your editor {/*your-editor*/}
+## Ritillinn þinn {/*your-editor*/}
 
-[VS Code](https://code.visualstudio.com/) is one of the most popular editors in use today. It has a large marketplace of extensions and integrates well with popular services like GitHub. Most of the features listed below can be added to VS Code as extensions as well, making it highly configurable!
+[VS Code](https://code.visualstudio.com/) er á meðal allravinsælustu ritla í notkun. Margar viðbætur eru í boði og ritillinn samtengist vel vinsælum þjónustum eins og GitHub. Flest þau sérkenni sem útlistuð eru á þessari síðu eru studd og hann er auðstillanlegur.
 
-Other popular text editors used in the React community include:
+Á meðal annarra vinsælla ritla við React þróun má nefna:
 
-* [WebStorm](https://www.jetbrains.com/webstorm/) is an integrated development environment designed specifically for JavaScript.
-* [Sublime Text](https://www.sublimetext.com/) has support for JSX and TypeScript, [syntax highlighting](https://stackoverflow.com/a/70960574/458193) and autocomplete built in.
-* [Vim](https://www.vim.org/) is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X.
+* [WebStorm](https://www.jetbrains.com/webstorm/) er samþætt þróunarumhverfi (e. IDE) sérhannað fyrir JavaScript.
+* [Sublime Text](https://www.sublimetext.com/) er með innbyggðan stuðning fyrir JSX og TypeScript, [litakóðun fyrir málskipan](https://stackoverflow.com/a/70960574/458193), og sjálfvirkar útfyllingar á kóða.
+* [Vim](https://www.vim.org/) er einstaklega stillanlegur ritill sem var upphaflega þróaður til að gera hvers lags textavinnslu skilvirka. Fyrirrennari þess, „vi“, er innifalinn í flestum UNIX stýrikerfum, m.a. macOS.
 
-## Recommended text editor features {/*recommended-text-editor-features*/}
+## Ritlasérkenni sem mælt er með {/*recommended-text-editor-features*/}
 
-Some editors come with these features built in, but others might require adding an extension. Check to see what support your editor of choice provides to be sure!
+Sumir ritlar eru með þessi sérkenni innbyggð, en aðrir gætu karfist utanaðkomandi viðbótar. Athugaðu ritillinn þinn styður til að vera viss!
 
-### Linting {/*linting*/}
+### Lóarar (e. linter) {/*linting*/}
 
-Code linters find problems in your code as you write, helping you fix them early. [ESLint](https://eslint.org/) is a popular, open source linter for JavaScript. 
+Lóarar finna vandamál í kóðanum á meðan þú skrifar hann og hjálpa þér að leysa þau sem fyrst. [ESLint](https://eslint.org/) er lóari fyrir JavaScript sem er opinn hugbúnaður.
 
-* [Install ESLint with the recommended configuration for React](https://www.npmjs.com/package/eslint-config-react-app) (be sure you have [Node installed!](https://nodejs.org/en/download/current/))
-* [Integrate ESLint in VSCode with the official extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Innsettu ESLint með þeim stillingum sem mælt er með fyrir React](https://www.npmjs.com/package/eslint-config-react-app) (gakktu úr skugga um að [Node.js sé uppsett!](https://nodejs.org/en/download/current/))
+* [Notaðu ESLint í VS Code með opinberu viðbótinni](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-**Make sure that you've enabled all the [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) rules for your project.** They are essential and catch the most severe bugs early. The recommended [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app) preset already includes them.
+**Gakktu úr skugga um að allar reglurnar í [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) séu í notkun.** Þær eru bráðnauðsynlegar og hjálpa þér að finna allar vandamestu villurnar strax.
 
-### Formatting {/*formatting*/}
+### Forsnið {/*formatting*/}
 
-The last thing you want to do when sharing your code with another contributor is get into an discussion about [tabs vs spaces](https://www.google.com/search?q=tabs+vs+spaces)! Fortunately, [Prettier](https://prettier.io/) will clean up your code by reformatting it to conform to preset, configurable rules. Run Prettier, and all your tabs will be converted to spaces—and your indentation, quotes, etc will also all be changed to conform to the configuration. In the ideal setup, Prettier will run when you save your file, quickly making these edits for you.
+Það síðasta sem flestir vilja standa í þegar unnið er að kóða í sameiningu með öðrum er að lenda í deilum um [dálkhök og bil](https://www.google.com/search?q=tabs+vs+spaces)! Sem betur fer erum við með [Prettier](https://prettier.io/) sem getur hreinsað kóðan þinn með því að sníða hann eftir ákveðnum stillingum. Keyrðu Prettier og það mun breyta öllum dálkhökum í bil–og inndrátturinn, gæsalappir, o.s.frv. verður breytt í samræmi við stillingarnar. Það er upplagt að stilla ritilinn þannig að Prettier keyri sjálfvirkt þegar þú vistar skrá.
 
-You can install the [Prettier extension in VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) by following these steps:
+Þú getur innset [Prettier viðbótina í VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) með því að fylgja þessum leiðbeiningum:
 
-1. Launch VS Code
-2. Use Quick Open (press Ctrl/Cmd+P)
-3. Paste in `ext install esbenp.prettier-vscode`
-4. Press Enter
+1. Ræstu VS Code
+2. Notaðu flýtivalmynd (ýttu á `CTRL/CMD + P`)
+3. Límdu `ext install esbenp.prettier-vscode`
+4. Ýttu á færslulykil
 
-#### Formatting on save {/*formatting-on-save*/}
+#### Að sníða sjálfvirkt við vistun {/*formatting-on-save*/}
 
-Ideally, you should format your code on every save. VS Code has settings for this!
+Það er ákjósanlegt að sníða kóða sjálfvirkt þegar hann er vistaður. VS Code er með stillingu til þess að gera þetta!
 
-1. In VS Code, press `CTRL/CMD + SHIFT + P`.
-2. Type "settings"
-3. Hit Enter
-4. In the search bar, type "format on save"
-5. Be sure the "format on save" option is ticked!
+1. Í VS Code, ýttu á `CTRL/CMD + SHIFT + P`
+2. Skrifaðu „settings“
+3. Ýttu á færslulykil
+4. Skrifaðu „format on save“ í leitinni
+5. Hakaðu við „format on save“
 
-> If your ESLint preset has formatting rules, they may conflict with Prettier. We recommend disabling all formatting rules in your ESLint preset using [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) so that ESLint is *only* used for catching logical mistakes. If you want to enforce that files are formatted before a pull request is merged, use [`prettier --check`](https://prettier.io/docs/en/cli.html#--check) for your continuous integration.
+> Ef þú ert með ESLint uppsett þá gætirðu lent í því að stillingar þess séu ekki í samræmi við stillingarnar á Prettier. Það er mælt með að afstilla allar sniðsstillingar í ESLint með því að nota [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) og þá kannar ESLint bara notkunarvillur. Notaðu [`prettier --check`](https://prettier.io/docs/en/cli.html#--check) í prófanaferlinu til að sjá um að allar skrár séu sniðnar sjálfvirkt áður en kóðagrein er tvinnuð.

@@ -4,10 +4,10 @@
   "routes": [
     {
       "hasSectionHeader": true,
-      "sectionHeader": "NOTKUN REACTS"
+      "sectionHeader": "NOTKUN Á REACT"
     },
     {
-      "title": "Fyrstu skref",
+      "title": "Fyrstu skrefin",
       "path": "/learn",
       "routes": [
         {
@@ -21,23 +21,23 @@
       ]
     },
     {
-      "title": "Installation",
+      "title": "Innsetning",
       "path": "/learn/installation",
       "routes": [
         {
-          "title": "Start a New React Project",
+          "title": "Byrjaðu á nýju React verkefni",
           "path": "/learn/start-a-new-react-project"
         },
         {
-          "title": "Add React to an Existing Project",
+          "title": "Innsetning á React í tiltæku verkefni",
           "path": "/learn/add-react-to-an-existing-project"
         },
         {
-          "title": "Editor Setup",
+          "title": "Uppsetning á ritli",
           "path": "/learn/editor-setup"
         },
         {
-          "title": "React Developer Tools",
+          "title": "Þróunartól fyrir React",
           "path": "/learn/react-developer-tools"
         }
       ]

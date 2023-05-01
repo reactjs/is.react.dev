@@ -1,61 +1,65 @@
 ---
-title: React Developer Tools
+title: Þróunartól fyrir React
 ---
 
 <Intro>
 
-Use React Developer Tools to inspect React [components](/learn/your-first-component), edit [props](/learn/passing-props-to-a-component) and [state](/learn/state-a-components-memory), and identify performance problems.
+Notaðu React þróunartól til að kanna innri stöðu React [íhluta](/learn/your-first-component), breyta [eiginleikum](/learn/passing-props-to-a-component) og [stöðu](/learn/state-a-components-memory), og bera kennsl á frammistöðuvandamál.
 
 </Intro>
 
 <YouWillLearn>
 
-* How to install React Developer Tools
+* Hvernig skal innsetja þróunartólin
 
 </YouWillLearn>
 
-## Browser extension {/*browser-extension*/}
+## Vafraviðbót {/*browser-extension*/}
 
 The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
+The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
+Einfaldasta leiðin til að kemba vefsíður skrifaðar í React er að nota vafraviðbót með React þróunartólum. Viðbótin er aðgengileg nokkrum af helstu vöfrunum:
 
-* [Install for **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-* [Install for **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-* [Install for **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
+* [Innsettu í **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+* [Innsettu í **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+* [Innsettu í **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
-Now, if you visit a website **built with React,** you will see the _Components_ and _Profiler_ panels.
+Þegar viðbótin er uppsett geturðu séð flipa merkta „_Components_“ og „_Profiler_“.
 
-![React Developer Tools extension](/images/docs/react-devtools-extension.png)
+![React þróunartól sem viðbót](/images/docs/react-devtools-extension.png)
 
-### Safari and other browsers {/*safari-and-other-browsers*/}
-For other browsers (for example, Safari), install the [`react-devtools`](https://www.npmjs.com/package/react-devtools) npm package:
+### Safari og aðrir vafrar {/*safari-and-other-browsers*/}
+
+Hægt er að innsetja npm pakkan [`react-devtools`](https://www.npmjs.com/package/react-devtools) í öðrum vöfrum (t.d. Safari):
 ```bash
 # Yarn
 yarn global add react-devtools
 
-# Npm
+# npm
 npm install -g react-devtools
 ```
 
-Next open the developer tools from the terminal:
+Næst skaltu opna þróunartólin úr skipanalínunni:
 ```bash
 react-devtools
 ```
 
-Then connect your website by adding the following `<script>` tag to the beginning of your website's `<head>`:
+Þá geturðu tengst vefsíðunni með því að bæta eftirfarandi `<script>` merki efst í `<head>` merki vefsíðunnar:
 ```html {3}
 <html>
   <head>
     <script src="http://localhost:8097"></script>
 ```
 
-Reload your website in the browser now to view it in developer tools.
+Endurglæddu vefsíðuna í vafranum til að sjá þróunartólin.
 
-![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
+![React þróunartól án vafraviðbótar](/images/docs/react-devtools-standalone.png)
 
-## Mobile (React Native) {/*mobile-react-native*/}
-React Developer Tools can be used to inspect apps built with [React Native](https://reactnative.dev/) as well.
+## Farandtæki (React Native) {/*mobile-react-native*/}
 
-The easiest way to use React Developer Tools is to install it globally:
+Þróunartólin fyrir React má líka nota til að kanna forrit sem eru byggð með [React Native](https://reactnative.dev/).
+
+Einfaldasta leiðin til að nota þróunartólin er að innsetja þau í allsherjarumhverfinu:
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -64,13 +68,13 @@ yarn global add react-devtools
 npm install -g react-devtools
 ```
 
-Next open the developer tools from the terminal.
+Næst skaltu opna þróunartólin úr skipanalínunni:
 ```bash
 react-devtools
 ```
 
-It should connect to any local React Native app that's running.
+Tólin ættu þá að tengjast staðbundnu React Native forriti sem er í keyrslu.
 
-> Try reloading the app if developer tools doesn't connect after a few seconds.
+> Prófaðu að endurglæða forritið ef þróunartólin eru ekki aðgengileg eftir nokkrar sekúndur.
 
-[Learn more about debugging React Native.](https://reactnative.dev/docs/debugging)
+[Nánar varðandi kembun React Native forrita](https://reactnative.dev/docs/debugging).

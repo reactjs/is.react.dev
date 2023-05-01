@@ -1,57 +1,56 @@
 ---
-title: Installation
+title: Innsetning
 ---
 
 <Intro>
 
-React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.
+React var hannað þannig að hægt sé að byrja að nota það hægt og rólega. Þú getur notað React eins lítið eða eins mikið og þú þarft. Hvort sem þig langar bara að finna smjörþefinn af React, bæta við gagnvirkni á HTML síðu, eða byrja á flóknu React verkefni, þá er þetta svæði fyrir þig.
 
 </Intro>
 
 <YouWillLearn isChapter={true}>
 
-* [How to start a new React project](/learn/start-a-new-react-project)
-* [How to add React to an existing project](/learn/add-react-to-an-existing-project)
-* [How to set up your editor](/learn/editor-setup)
-* [How to install React Developer Tools](/learn/react-developer-tools)
+* [Byrjaðu á nýju React verkefni](/learn/start-a-new-react-project)
+* [Innsetning á React í tiltæku verkefni](/learn/add-react-to-an-existing-project)
+* [Uppsetning á ritli](/learn/editor-setup)
+* [Þróunartól fyrir React](/learn/react-developer-tools)
 
 </YouWillLearn>
 
-## Try React {/*try-react*/}
+## Prófaðu React {/*try-react*/}
 
-You don't need to install anything to play with React. Try editing this sandbox!
+Þú þarft ekki að innsetja neitt til að byrja að fikta í React. Prófaðu að breyta kóðanum í þessum sandkassa!
 
 <Sandpack>
 
 ```js
-function Greeting({ name }) {
-  return <h1>Hello, {name}</h1>;
+function Heilsun({ nafn }) {
+  return <h1>Halló, {nafn}</h1>;
 }
 
-export default function App() {
-  return <Greeting name="world" />
+export default function Forrit() {
+  return <Heilsun nafn="heimur" />
 }
 ```
 
 </Sandpack>
 
-You can edit it directly or open it in a new tab by pressing the "Fork" button in the upper right corner.
+Þú getur breytt kóðanum beint eða opnað sandkassan í nýjum flipa með því að smella á „Fork“ hnappinn í efri hægri kantinum.
 
-Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
+Flestar síðurnar í React skjalbúnaðinum innihalda sandkassa eins og þennan. Fyrir utan þessa vefsíðu eru til aðrir sandkassar á veraldarvefnum sem styðja React: til dæmis [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), og [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
 
-### Try React locally {/*try-react-locally*/}
+### Prófaðu React á eigin vél {/*try-react-locally*/}
 
-To try React locally on your computer, [download this HTML page.](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html) Open it in your editor and in your browser!
+[Sæktu þessa HTML skrá](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html) til að prófa React staðbundið á eigin vél. Prófaðu að opna hana í eigin ritli og í vafranum þínum!
 
-## Start a new React project {/*start-a-new-react-project*/}
+## Byrjaðu á nýju React verkefni {/*start-a-new-react-project*/}
 
-If you want to build an app or a website fully with React, [start a new React project.](/learn/start-a-new-react-project)
+Skoðaðu [leiðbeiningar um uppsetningu á nýju React verkefni](/learn/start-a-new-react-project) ef þú vilt smíða vefforrit eða vefsíðu frá grunni með React.
 
-## Add React to an existing project {/*add-react-to-an-existing-project*/}
+## Bættu React við tiltækt verkefni {/*add-react-to-an-existing-project*/}
 
-If want to try using React in your existing app or a website, [add React to an existing project.](/learn/add-react-to-an-existing-project)
+Skoðaðu [leiðbeiningar um innsetningu á React í tiltæku verkefni](/learn/add-react-to-an-existing-project) ef þú vilt prófa að nota React í núverandi verkefni.
 
-## Next steps {/*next-steps*/}
+## Næstu skref {/*next-steps*/}
 
-Head to the [Quick Start](/learn) guide for a tour of the most important React concepts you will encounter every day.
-
+Kíktu á [fyrstu skref](/learn) til að fá heildaryfirsýn á React og þeim hugtökum sem þú munt koma til með að nota dagsdaglega.
