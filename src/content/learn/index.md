@@ -1,10 +1,10 @@
 ---
-title: Fyrstu skref
+title: Fyrstu skrefin
 ---
 
 <Intro>
 
-Velkomin í skjalbúnað Reacts! Þessi síða veitir innsýn í öll þau helstu hugtök sem þú þarft að kunna skil á til að geta notað React dagsdaglega.
+Velkomin í skjalbúnaðinn fyrir React! Þessi síða veitir innsýn í öll þau helstu hugtök sem þú þarft að kunna skil á til að geta notað React dagsdaglega.
 
 </Intro>
 

@@ -4,10 +4,10 @@
   "routes": [
     {
       "hasSectionHeader": true,
-      "sectionHeader": "NOTKUN REACTS"
+      "sectionHeader": "NOTKUN Á REACT"
     },
     {
-      "title": "Fyrstu skref",
+      "title": "Fyrstu skrefin",
       "path": "/learn"
     },
     {

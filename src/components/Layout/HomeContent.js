@@ -139,8 +139,8 @@ export function HomeContent() {
               type="primary"
               size="lg"
               className="w-full sm:w-auto justify-center"
-              label="Lærðu React">
-              Lærðu React
+              label="Lærðu á React">
+              Lærðu á React
             </ButtonLink>
             <ButtonLink
               href={'/reference/react'}
