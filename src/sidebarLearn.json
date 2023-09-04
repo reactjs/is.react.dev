@@ -37,7 +37,15 @@
           "path": "/learn/editor-setup"
         },
         {
+<<<<<<< HEAD
           "title": "Þróunartól fyrir React",
+=======
+          "title": "Using TypeScript",
+          "path": "/learn/typescript"
+        },
+        {
+          "title": "React Developer Tools",
+>>>>>>> 722b54640ea8ef146ef59558100819a6bb31c252
           "path": "/learn/react-developer-tools"
         }
       ]
