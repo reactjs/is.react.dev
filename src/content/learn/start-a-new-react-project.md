@@ -21,12 +21,16 @@ Ef þig langar að smíða nýja vefsíðu með React frá grunni þá mælum vi
 **[Next.js](https://nextjs.org/) er svokallaður heilstafla (e. full-stack) React rammi.** Next.js er fjölhæfur rammi sem gerir þér kleift að smíða React forrit af hvaða stærð sem er--frá kyrrlegri pistlasíðu yfir í flókið og kviklegt forrit. Keyra má eftirfarandi skipun til að skapa nýtt Next.js verkefni frá grunni:
 
 <TerminalBlock>
-npx create-next-app
+npx create-next-app@latest
 </TerminalBlock>
 
 Skoðaðu [Next.js inngangsleiðbeiningar](https://nextjs.org/learn/foundations/about-nextjs) ef þú hefur ekki notað Next.js áður.
 
+<<<<<<< HEAD
 [Vercel](https://vercel.com) sér um þróun og viðhald á Next.js. Þú getur getur [keyrt Next.js vef](https://nextjs.org/docs/deployment) á Node.js vefþjóni, miðlaralausri hýsingu, eða á þínum eigin netþjóni. [Kyrrlega Next.js](https://nextjs.org/docs/advanced-features/static-html-export) vefi má keyra á hvaða kyrrlegri (e. static) hýsingu sem er.
+=======
+Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.js app](https://nextjs.org/docs/app/building-your-application/deploying) to any Node.js or serverless hosting, or to your own server. Next.js also supports a [static export](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) which doesn't require a server.
+>>>>>>> 9aa84b19222838f38863ce4bd8f516dbfe193bbc
 
 ### Remix {/*remix*/}
 
@@ -90,6 +94,7 @@ React teymið hefur nýverið komist að því að nánari samhæfing á React o
 
 ### Next.js (App Router) {/*nextjs-app-router*/}
 
+<<<<<<< HEAD
 **[App Router tæknin í Next.js](https://beta.nextjs.org/docs/getting-started) er endurhönnun á forritaskilunum í Next.js með það að leiðarljósi að uppfylla draumsýn React teymisins um heilstafla högun.** Hún gerir þér kleift að sækja gögn í ósamstillt íhlutum sem keyra á netþjóninum eða jafnvel á meðan á smíði stendur.
 
 [Vercel](https://vercel.com) sér um þróun og viðhald á Next.js. Þú getur [keyrt Next.js vef](https://vercel.com/) á hvaða Node.js eða biðlaralausri hýsingu sem er, eða á þínum eigin netþjóni. Next.js styður einnig [kyrrlegan útflutning](https://beta.nextjs.org/docs/configuring/static-export) sem krefst ekki netþjóns.
@@ -99,6 +104,11 @@ React teymið hefur nýverið komist að því að nánari samhæfing á React o
 App Router tæknin í Next.js er **í betaprófunum eins og stendur og ekki er mælt með notkun hennar í rekstri** (mars 2023). Til að prófa þessa tækni í tiltæku Next.js verkefni má [fylgja þessum leiðbeiningum að þrepaskiptum kerfaskiptum](https://beta.nextjs.org/docs/upgrade-guide#migrating-from-pages-to-app).
 
 </Pitfall>
+=======
+**[Next.js's App Router](https://nextjs.org/docs) is a redesign of the Next.js APIs aiming to fulfill the React team’s full-stack architecture vision.** It lets you fetch data in asynchronous components that run on the server or even during the build.
+
+Next.js is maintained by [Vercel](https://vercel.com/). You can [deploy a Next.js app](https://nextjs.org/docs/app/building-your-application/deploying) to any Node.js or serverless hosting, or to your own server. Next.js also supports [static export](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) which doesn't require a server.
+>>>>>>> 9aa84b19222838f38863ce4bd8f516dbfe193bbc
 
 <DeepDive>
 
