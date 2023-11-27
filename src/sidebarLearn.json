@@ -37,7 +37,15 @@
           "path": "/learn/editor-setup"
         },
         {
+<<<<<<< HEAD
           "title": "Þróunartól fyrir React",
+=======
+          "title": "Using TypeScript",
+          "path": "/learn/typescript"
+        },
+        {
+          "title": "React Developer Tools",
+>>>>>>> 6570e6cd79a16ac3b1a2902632eddab7e6abb9ad
           "path": "/learn/react-developer-tools"
         }
       ]
@@ -82,6 +90,10 @@
         {
           "title": "Keeping Components Pure",
           "path": "/learn/keeping-components-pure"
+        },
+        {
+          "title": "Your UI as a Tree",
+          "path": "/learn/understanding-your-ui-as-a-tree"
         }
       ]
     },
