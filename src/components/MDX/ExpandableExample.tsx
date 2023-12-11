@@ -70,14 +70,24 @@ function ExpandableExample({children, excerpt, type}: ExpandableExampleProps) {
           })}>
           {isDeepDive && (
             <>
+<<<<<<< HEAD
               <IconDeepDive className="inline mr-2 dark:text-purple-30 text-purple-40" />
               Köfum dýpra
+=======
+              <IconDeepDive className="inline me-2 dark:text-purple-30 text-purple-40" />
+              Deep Dive
+>>>>>>> af54fc873819892f6050340df236f33a18ba5fb8
             </>
           )}
           {isExample && (
             <>
+<<<<<<< HEAD
               <IconCodeBlock className="inline mr-2 dark:text-yellow-30 text-yellow-50" />
               Dæmi
+=======
+              <IconCodeBlock className="inline me-2 dark:text-yellow-30 text-yellow-50" />
+              Example
+>>>>>>> af54fc873819892f6050340df236f33a18ba5fb8
             </>
           )}
         </h5>
@@ -98,7 +108,7 @@ function ExpandableExample({children, excerpt, type}: ExpandableExampleProps) {
               isExample,
           })}
           onClick={() => setIsExpanded((current) => !current)}>
-          <span className="mr-1">
+          <span className="me-1">
             <IconChevron displayDirection={isExpanded ? 'up' : 'down'} />
           </span>
           {isExpanded ? 'Fela' : 'Sjá smáatriði'}
