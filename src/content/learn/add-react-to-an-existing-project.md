@@ -67,7 +67,7 @@ Bættu svo þessum kóða efst í aðal JavaScript skránni (hún ætti að heit
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 // Fjarlægjum núverandi efni.
@@ -132,7 +132,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 function Valmynd() {
