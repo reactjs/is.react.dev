@@ -37,7 +37,11 @@ export default function Forrit() {
 
 Þú getur breytt kóðanum beint eða opnað sandkassan í nýjum flipa með því að smella á „Fork“ hnappinn í efri hægri kantinum.
 
+<<<<<<< HEAD
 Flestar síðurnar í React skjalbúnaðinum innihalda sandkassa eins og þennan. Fyrir utan þessa vefsíðu eru til aðrir sandkassar á veraldarvefnum sem styðja React: til dæmis [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), og [CodePen.](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb)
+=======
+Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen.](https://codepen.io/pen?template=QWYVwWN)
+>>>>>>> 53fbed3f676013508fb9cce22a3fc8664b1dc5a1
 
 ### Prófaðu React á eigin vél {/*try-react-locally*/}
 
