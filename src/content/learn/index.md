@@ -4,7 +4,11 @@ title: Fyrstu skrefin
 
 <Intro>
 
+<<<<<<< HEAD
 Velkomin í skjalbúnaðinn fyrir React! Þessi síða veitir innsýn í öll þau helstu hugtök sem þú þarft að kunna skil á til að geta notað React dagsdaglega.
+=======
+Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will use on a daily basis.
+>>>>>>> 6ae99dddc3b503233291da96e8fd4b118ed6d682
 
 </Intro>
 
