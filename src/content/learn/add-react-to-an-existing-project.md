@@ -20,9 +20,15 @@ Gefum okkur að þú sért með tiltæka vefþjónustu á `example.com` sem var 
 
 Þá mælum við með þessari nálgun:
 
+<<<<<<< HEAD
 1. **Smíðaðu React hlutann** með einhverju [React rammakerfi](/learn/start-a-new-react-project).
 2. **Tilgreindu `/eitthvað-forrit` sem *grunnslóð*** í stillingum rammans sem þú valdir (sjá hér: [Next.js](https://nextjs.org/docs/api-reference/next.config.js/basepath) eða [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
 3. **Stilltu vefþjóninn eða vefselið** á þann veg að allar beiðnir sem hefjist á `/eitthvað-forrit/` séu birtar í React forritinu þínu.
+=======
+1. **Build the React part of your app** using one of the [React-based frameworks](/learn/start-a-new-react-project).
+2. **Specify `/some-app` as the *base path*** in your framework's configuration (here's how: [Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath), [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
+3. **Configure your server or a proxy** so that all requests under `/some-app/` are handled by your React app.
+>>>>>>> 9000e6e003854846c4ce5027703b5ce6f81aad80
 
 Þetta tryggir að React hlutinn í vefsíðunni þinni [fylgi þróunarstöðlunum](/learn/start-a-new-react-project#can-i-use-react-without-a-framework) sem eru innbyggðir í þessum römmum.
 
@@ -67,7 +73,7 @@ Bættu svo þessum kóða efst í aðal JavaScript skránni (hún ætti að heit
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 // Fjarlægjum núverandi efni.
@@ -132,7 +138,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 function Valmynd() {
