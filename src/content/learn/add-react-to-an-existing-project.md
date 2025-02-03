@@ -20,9 +20,15 @@ Gefum okkur að þú sért með tiltæka vefþjónustu á `example.com` sem var 
 
 Þá mælum við með þessari nálgun:
 
+<<<<<<< HEAD
 1. **Smíðaðu React hlutann** með einhverju [React rammakerfi](/learn/start-a-new-react-project).
 2. **Tilgreindu `/eitthvað-forrit` sem *grunnslóð*** í stillingum rammans sem þú valdir (sjá hér: [Next.js](https://nextjs.org/docs/api-reference/next.config.js/basepath) eða [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
 3. **Stilltu vefþjóninn eða vefselið** á þann veg að allar beiðnir sem hefjist á `/eitthvað-forrit/` séu birtar í React forritinu þínu.
+=======
+1. **Build the React part of your app** using one of the [React-based frameworks](/learn/start-a-new-react-project).
+2. **Specify `/some-app` as the *base path*** in your framework's configuration (here's how: [Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath), [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
+3. **Configure your server or a proxy** so that all requests under `/some-app/` are handled by your React app.
+>>>>>>> 6fc98fffdaad3b84e6093d1eb8def8f2cedeee16
 
 Þetta tryggir að React hlutinn í vefsíðunni þinni [fylgi þróunarstöðlunum](/learn/start-a-new-react-project#can-i-use-react-without-a-framework) sem eru innbyggðir í þessum römmum.
 
@@ -45,7 +51,11 @@ Með því að skipta JavaScript kóða í einingar er hægt að nota margar skr
 
 * **Ef vefurinn þinn er nú þegar skiptur í mismunandi skrár sem nota `import` setningar** reyndu þá að halda áfram að nota sama kerfi. Athugaðu hvort það virki að skrifa `<div />` án þess að það komi málskipanvilla. Ef þetta veldur villu þá kann að vera að þú þurfir að [umbreyta JavaScript kóðanum með Babel](https://babeljs.io/setup), og virkja [Babel React forstillinguna](https://babeljs.io/docs/babel-preset-react) til að nota JSX.
 
+<<<<<<< HEAD
 * **Ef vefurinn þinn er ekki með neitt kerfi til að þýða JavaScript einingar** þá skaltu prófa að nota [Vite](https://vitejs.dev/) til þess. Vite samfélagið viðheldur [margs konar samtengingum við bakendaramma](https://github.com/vitejs/awesome-vite#integrations-with-backends), m.a. Rails, Django, og Laravel. Ef bakendaramminn þinn er ekki útlistaður þá skaltu [fylgja þessum leiðbeiningum](https://vitejs.dev/guide/backend-integration.html) til að tengja Vite við bakendann þinn handvirkt.
+=======
+* **If your app doesn't have an existing setup for compiling JavaScript modules,** set it up with [Vite](https://vite.dev/). The Vite community maintains [many integrations with backend frameworks](https://github.com/vitejs/awesome-vite#integrations-with-backends), including Rails, Django, and Laravel. If your backend framework is not listed, [follow this guide](https://vite.dev/guide/backend-integration.html) to manually integrate Vite builds with your backend.
+>>>>>>> 6fc98fffdaad3b84e6093d1eb8def8f2cedeee16
 
 Til að kanna hvort kerfið þitt virki geturðu keyrt eftirfarandi skipun í aðalmöppu verkefnisins:
 
@@ -57,17 +67,22 @@ Bættu svo þessum kóða efst í aðal JavaScript skránni (hún ætti að heit
 
 <Sandpack>
 
-```html index.html hidden
+```html public/index.html hidden
 <!DOCTYPE html>
 <html>
   <head><title>Vefurinn minn</title></head>
   <body>
+<<<<<<< HEAD
     <!-- Núverandi efni (í þessu tilfelli skiptum við því algjörlega út) -->
+=======
+    <!-- Your existing page content (in this example, it gets replaced) -->
+    <div id="root"></div>
+>>>>>>> 6fc98fffdaad3b84e6093d1eb8def8f2cedeee16
   </body>
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 // Fjarlægjum núverandi efni.
@@ -84,7 +99,11 @@ Ef efnið á síðunni hvarf og „Halló, heimur!“ kom þess í stað þá vi
 
 <Note>
 
+<<<<<<< HEAD
 Fyrst um sinn getur verið hálfógnvekjandi að reyna að útfæra einingamiðað JavaScript umhverfi, en það er þess virði! Prófaðu að skoða [efnið frá React samfélaginu](/community) eða [Vite Chat](https://chat.vitejs.dev/) ef þér finnst þú ekki ná árangri.
+=======
+Integrating a modular JavaScript environment into an existing project for the first time can feel intimidating, but it's worth it! If you get stuck, try our [community resources](/community) or the [Vite Chat](https://chat.vite.dev/).
+>>>>>>> 6fc98fffdaad3b84e6093d1eb8def8f2cedeee16
 
 </Note>
 
@@ -120,7 +139,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 
 <Sandpack>
 
-```html index.html
+```html public/index.html
 <!DOCTYPE html>
 <html>
   <head><title>Vefurinn minn</title></head>
@@ -132,7 +151,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 function Valmynd() {
