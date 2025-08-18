@@ -55,6 +55,7 @@ Endurglæddu vefsíðuna í vafranum til að sjá þróunartólin.
 
 ![React þróunartól án vafraviðbótar](/images/docs/react-devtools-standalone.png)
 
+<<<<<<< HEAD
 ## Farandtæki (React Native) {/*mobile-react-native*/}
 
 Þróunartólin fyrir React má líka nota til að kanna forrit sem eru byggð með [React Native](https://reactnative.dev/).
@@ -63,11 +64,15 @@ Einfaldasta leiðin til að nota þróunartólin er að innsetja þau í allsher
 ```bash
 # Yarn
 yarn global add react-devtools
+=======
+## Mobile (React Native) {/*mobile-react-native*/}
 
-# Npm
-npm install -g react-devtools
-```
+To inspect apps built with [React Native](https://reactnative.dev/), you can use [React Native DevTools](https://reactnative.dev/docs/react-native-devtools), the built-in debugger that deeply integrates React Developer Tools. All features work identically to the browser extension, including native element highlighting and selection.
+>>>>>>> e9a7cb1b6ca1659b42d81555ecef0cd554b7a983
 
+[Learn more about debugging in React Native.](https://reactnative.dev/docs/debugging)
+
+<<<<<<< HEAD
 Næst skaltu opna þróunartólin úr skipanalínunni:
 ```bash
 react-devtools
@@ -78,3 +83,6 @@ Tólin ættu þá að tengjast staðbundnu React Native forriti sem er í keyrsl
 > Prófaðu að endurglæða forritið ef þróunartólin eru ekki aðgengileg eftir nokkrar sekúndur.
 
 [Nánar varðandi kembun React Native forrita](https://reactnative.dev/docs/debugging).
+=======
+> For versions of React Native earlier than 0.76, please use the standalone build of React DevTools by following the [Safari and other browsers](#safari-and-other-browsers) guide above.
+>>>>>>> e9a7cb1b6ca1659b42d81555ecef0cd554b7a983

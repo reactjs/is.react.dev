@@ -40,7 +40,11 @@ Lóarar finna vandamál í kóðanum á meðan þú skrifar hann og hjálpa þé
 
 ### Forsnið {/*formatting*/}
 
+<<<<<<< HEAD
 Það síðasta sem flestir vilja standa í þegar unnið er að kóða í sameiningu með öðrum er að lenda í deilum um [dálkhök og bil](https://www.google.com/search?q=tabs+vs+spaces)! Sem betur fer erum við með [Prettier](https://prettier.io/) sem getur hreinsað kóðan þinn með því að sníða hann eftir ákveðnum stillingum. Keyrðu Prettier og það mun breyta öllum dálkhökum í bil–og inndrátturinn, gæsalappir, o.s.frv. verður breytt í samræmi við stillingarnar. Það er upplagt að stilla ritilinn þannig að Prettier keyri sjálfvirkt þegar þú vistar skrá.
+=======
+The last thing you want to do when sharing your code with another contributor is get into a discussion about [tabs vs spaces](https://www.google.com/search?q=tabs+vs+spaces)! Fortunately, [Prettier](https://prettier.io/) will clean up your code by reformatting it to conform to preset, configurable rules. Run Prettier, and all your tabs will be converted to spaces—and your indentation, quotes, etc will also all be changed to conform to the configuration. In the ideal setup, Prettier will run when you save your file, quickly making these edits for you.
+>>>>>>> e9a7cb1b6ca1659b42d81555ecef0cd554b7a983
 
 Þú getur innset [Prettier viðbótina í VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) með því að fylgja þessum leiðbeiningum:
 
