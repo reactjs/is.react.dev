@@ -20,11 +20,19 @@ Gefum okkur að þú sért með tiltæka vefþjónustu á `example.com` sem var 
 
 Þá mælum við með þessari nálgun:
 
+<<<<<<< HEAD
 1. **Smíðaðu React hlutann** með einhverju [React rammakerfi](/learn/start-a-new-react-project).
 2. **Tilgreindu `/eitthvað-forrit` sem *grunnslóð*** í stillingum rammans sem þú valdir (sjá hér: [Next.js](https://nextjs.org/docs/api-reference/next.config.js/basepath) eða [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
 3. **Stilltu vefþjóninn eða vefselið** á þann veg að allar beiðnir sem hefjist á `/eitthvað-forrit/` séu birtar í React forritinu þínu.
 
 Þetta tryggir að React hlutinn í vefsíðunni þinni [fylgi þróunarstöðlunum](/learn/start-a-new-react-project#can-i-use-react-without-a-framework) sem eru innbyggðir í þessum römmum.
+=======
+1. **Build the React part of your app** using one of the [React-based frameworks](/learn/creating-a-react-app).
+2. **Specify `/some-app` as the *base path*** in your framework's configuration (here's how: [Next.js](https://nextjs.org/docs/app/api-reference/config/next-config-js/basePath), [Gatsby](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)).
+3. **Configure your server or a proxy** so that all requests under `/some-app/` are handled by your React app.
+
+This ensures the React part of your app can [benefit from the best practices](/learn/build-a-react-app-from-scratch#consider-using-a-framework) baked into those frameworks.
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 Sum React rammakerfi eru heilstafla (e. full-stack) og gera þér kleift að skrifa bakendakóða líka. Hvort sem það er eitthvað sem þú vilt nýta þer eða ekki þá geturðu fylgt sömu nálgunum. Til dæmis er hægt að birta kyrrlegt HTML, CSS, og JS ([`next export` úttak](https://nextjs.org/docs/advanced-features/static-html-export) í Next.js, sjálfgefið í Gatsby) á síðunni `/eitthvað-forrit`.
 
@@ -45,7 +53,11 @@ Með því að skipta JavaScript kóða í einingar er hægt að nota margar skr
 
 * **Ef vefurinn þinn er nú þegar skiptur í mismunandi skrár sem nota `import` setningar** reyndu þá að halda áfram að nota sama kerfi. Athugaðu hvort það virki að skrifa `<div />` án þess að það komi málskipanvilla. Ef þetta veldur villu þá kann að vera að þú þurfir að [umbreyta JavaScript kóðanum með Babel](https://babeljs.io/setup), og virkja [Babel React forstillinguna](https://babeljs.io/docs/babel-preset-react) til að nota JSX.
 
+<<<<<<< HEAD
 * **Ef vefurinn þinn er ekki með neitt kerfi til að þýða JavaScript einingar** þá skaltu prófa að nota [Vite](https://vitejs.dev/) til þess. Vite samfélagið viðheldur [margs konar samtengingum við bakendaramma](https://github.com/vitejs/awesome-vite#integrations-with-backends), m.a. Rails, Django, og Laravel. Ef bakendaramminn þinn er ekki útlistaður þá skaltu [fylgja þessum leiðbeiningum](https://vitejs.dev/guide/backend-integration.html) til að tengja Vite við bakendann þinn handvirkt.
+=======
+* **If your app doesn't have an existing setup for compiling JavaScript modules,** set it up with [Vite](https://vite.dev/). The Vite community maintains [many integrations with backend frameworks](https://github.com/vitejs/awesome-vite#integrations-with-backends), including Rails, Django, and Laravel. If your backend framework is not listed, [follow this guide](https://vite.dev/guide/backend-integration.html) to manually integrate Vite builds with your backend.
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 Til að kanna hvort kerfið þitt virki geturðu keyrt eftirfarandi skipun í aðalmöppu verkefnisins:
 
@@ -57,17 +69,22 @@ Bættu svo þessum kóða efst í aðal JavaScript skránni (hún ætti að heit
 
 <Sandpack>
 
-```html index.html hidden
+```html public/index.html hidden
 <!DOCTYPE html>
 <html>
   <head><title>Vefurinn minn</title></head>
   <body>
+<<<<<<< HEAD
     <!-- Núverandi efni (í þessu tilfelli skiptum við því algjörlega út) -->
+=======
+    <!-- Your existing page content (in this example, it gets replaced) -->
+    <div id="root"></div>
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
   </body>
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 // Fjarlægjum núverandi efni.
@@ -84,7 +101,11 @@ Ef efnið á síðunni hvarf og „Halló, heimur!“ kom þess í stað þá vi
 
 <Note>
 
+<<<<<<< HEAD
 Fyrst um sinn getur verið hálfógnvekjandi að reyna að útfæra einingamiðað JavaScript umhverfi, en það er þess virði! Prófaðu að skoða [efnið frá React samfélaginu](/community) eða [Vite Chat](https://chat.vitejs.dev/) ef þér finnst þú ekki ná árangri.
+=======
+Integrating a modular JavaScript environment into an existing project for the first time can feel intimidating, but it's worth it! If you get stuck, try our [community resources](/community) or the [Vite Chat](https://chat.vite.dev/).
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 </Note>
 
@@ -120,7 +141,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 
 <Sandpack>
 
-```html index.html
+```html public/index.html
 <!DOCTYPE html>
 <html>
   <head><title>Vefurinn minn</title></head>
@@ -132,7 +153,7 @@ Með þessu móti geturðu fundið eininguna í HTML skránni með [`document.ge
 </html>
 ```
 
-```js index.js active
+```js src/index.js active
 import { createRoot } from 'react-dom/client';
 
 function Valmynd() {
@@ -149,7 +170,11 @@ rót.render(<Valmynd />);
 
 Taktu eftir því að upprunalega HTML efnið í `index.html` er enn þar, en React íhluturinn `Valmynd` er nú innan í `<nav id="valmynd">` í HTML skránni. Lestu [skjalbúnaðinn fyrir `createRoot`](/reference/react-dom/client/createRoot#rendering-a-page-partially-built-with-react) til að kynna þér nánar hvernig hægt er að birta React íhluti inni í HTML síðu.
 
+<<<<<<< HEAD
 Það er algengt að byrja á að útfæra smærri gagnvirka íhluti eins og takka og hægt og rólega „færa sig ofar“ þar til öll síðan er útfærð í React. Ef þú nálgast það stig þá mælum við með því að flytja þig yfir í [React ramma](/learn/start-a-new-react-project) til að nýta React sem best.
+=======
+When you adopt React in an existing project, it's common to start with small interactive components (like buttons), and then gradually keep "moving upwards" until eventually your entire page is built with React. If you ever reach that point, we recommend migrating to [a React framework](/learn/creating-a-react-app) right after to get the most out of React.
+>>>>>>> abe931a8cb3aee3e8b15ef7e187214789164162a
 
 ## Notkun á React Native í tiltæku forriti á heimavangi {/*using-react-native-in-an-existing-native-mobile-app*/}
 
