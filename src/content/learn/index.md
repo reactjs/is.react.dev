@@ -4,7 +4,11 @@ title: Fyrstu skrefin
 
 <Intro>
 
+<<<<<<< HEAD
 Velkomin í skjalbúnaðinn fyrir React! Þessi síða veitir innsýn í öll þau helstu hugtök sem þú þarft að kunna skil á til að geta notað React dagsdaglega.
+=======
+Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will use on a daily basis.
+>>>>>>> 8bb31acb86bf68fa33d97dd0f1b834dfa71e2b1a
 
 </Intro>
 
@@ -143,10 +147,17 @@ return (
 <Sandpack>
 
 ```js
+<<<<<<< HEAD
 const notandi = {
   nafn: 'Hedy Lamarr',
   gengilsVeffang: 'https://i.imgur.com/yXOvdOSs.jpg',
   gengilsStærð: 90,
+=======
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://react.dev/images/docs/scientists/yXOvdOSs.jpg',
+  imageSize: 90,
+>>>>>>> 8bb31acb86bf68fa33d97dd0f1b834dfa71e2b1a
 };
 
 export default function Umgjörð() {
