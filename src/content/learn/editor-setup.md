@@ -31,7 +31,11 @@ Sumir ritlar eru með þessi sérkenni innbyggð, en aðrir gætu karfist utana�
 
 ### Lóarar (e. linter) {/*linting*/}
 
+<<<<<<< HEAD
 Lóarar finna vandamál í kóðanum á meðan þú skrifar hann og hjálpa þér að leysa þau sem fyrst. [ESLint](https://eslint.org/) er lóari fyrir JavaScript sem er opinn hugbúnaður.
+=======
+Code linters find problems in your code as you write, helping you fix them early. [ESLint](https://eslint.org/) is a popular, open source linter for JavaScript.
+>>>>>>> 7b6c3ceb9dd97249e9dce4a8a94e61aed6424698
 
 * [Innsettu ESLint með þeim stillingum sem mælt er með fyrir React](https://www.npmjs.com/package/eslint-config-react-app) (gakktu úr skugga um að [Node.js sé uppsett!](https://nodejs.org/en/download/current/))
 * [Notaðu ESLint í VS Code með opinberu viðbótinni](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -40,7 +44,11 @@ Lóarar finna vandamál í kóðanum á meðan þú skrifar hann og hjálpa þé
 
 ### Forsnið {/*formatting*/}
 
+<<<<<<< HEAD
 Það síðasta sem flestir vilja standa í þegar unnið er að kóða í sameiningu með öðrum er að lenda í deilum um [dálkhök og bil](https://www.google.com/search?q=tabs+vs+spaces)! Sem betur fer erum við með [Prettier](https://prettier.io/) sem getur hreinsað kóðan þinn með því að sníða hann eftir ákveðnum stillingum. Keyrðu Prettier og það mun breyta öllum dálkhökum í bil–og inndrátturinn, gæsalappir, o.s.frv. verður breytt í samræmi við stillingarnar. Það er upplagt að stilla ritilinn þannig að Prettier keyri sjálfvirkt þegar þú vistar skrá.
+=======
+The last thing you want to do when sharing your code with another contributor is get into a discussion about [tabs vs spaces](https://www.google.com/search?q=tabs+vs+spaces)! Fortunately, [Prettier](https://prettier.io/) will clean up your code by reformatting it to conform to preset, configurable rules. Run Prettier, and all your tabs will be converted to spaces—and your indentation, quotes, etc will also all be changed to conform to the configuration. In the ideal setup, Prettier will run when you save your file, quickly making these edits for you.
+>>>>>>> 7b6c3ceb9dd97249e9dce4a8a94e61aed6424698
 
 Þú getur innset [Prettier viðbótina í VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) með því að fylgja þessum leiðbeiningum:
 
