@@ -4,7 +4,11 @@ title: Fyrstu skrefin
 
 <Intro>
 
+<<<<<<< HEAD
 Velkomin í skjalbúnaðinn fyrir React! Þessi síða veitir innsýn í öll þau helstu hugtök sem þú þarft að kunna skil á til að geta notað React dagsdaglega.
+=======
+Welcome to the React documentation! This page will give you an introduction to 80% of the React concepts that you will use on a daily basis.
+>>>>>>> f5fa1e82edacdf8c6bfc4dfd9cf52029a96d5fd3
 
 </Intro>
 
@@ -143,10 +147,17 @@ return (
 <Sandpack>
 
 ```js
+<<<<<<< HEAD
 const notandi = {
   nafn: 'Hedy Lamarr',
   gengilsVeffang: 'https://i.imgur.com/yXOvdOSs.jpg',
   gengilsStærð: 90,
+=======
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://react.dev/images/docs/scientists/yXOvdOSs.jpg',
+  imageSize: 90,
+>>>>>>> f5fa1e82edacdf8c6bfc4dfd9cf52029a96d5fd3
 };
 
 export default function Umgjörð() {
@@ -339,7 +350,11 @@ function TakkinnMinn() {
 }
 ```
 
+<<<<<<< HEAD
 React mun kalla á fallið þitt aftur. Breytan `smellir` mun í þetta sinn mun hafa gildið `1`, svo mun það vera `2`, og svo koll af kolli.
+=======
+Calling `setCount` tells React to call your component function again. This is called a *re-render*. This time, `count` will be `1`. Then it will be `2`. And so on.
+>>>>>>> f5fa1e82edacdf8c6bfc4dfd9cf52029a96d5fd3
 
 Ef þú birtir sama íhlut oftar en einu sinni þá mun hver birting hafa sína eigin stöðu. Prófaðu að smella á hvorn takkan:
 
